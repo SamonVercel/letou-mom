@@ -72,3 +72,17 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = currentScrollTop;
 });
+
+var searchBtn = document.querySelector(".search-btn");
+var searchContain = document.querySelector(".search-contain");
+
+let search = false;
+searchBtn.addEventListener("click", function () {
+  search = !search;
+  if (search) {
+    searchContain.style.width = "240px";
+  } else {
+    searchContain.style.width = "45px";
+    window.location = "https://www.hay8855.com/?inviteCode=5522381";
+  }
+});

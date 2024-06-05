@@ -79,8 +79,12 @@
                     </a>
                     <div class="flex gap-4 items-center">
                         <div
-                            class="search h-[65px] w-[65px] flex items-center justify-center hover:bg-gray-800 text-bold text-2xl text-white">
-                            <ion-icon name="search-outline"></ion-icon>
+                            class="search-contain flex items-center justify-end w-[45px] h-[45px] overflow-hidden transition-all">
+                            <input class="w-[200px] h-full" type="text">
+                            <div
+                                class="search-btn h-[45px] min-w-[45px] flex items-center justify-center hover:bg-gray-800 text-bold text-2xl text-white">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
                         </div>
                         <div class="bottom-menu-btn text-white flex items-center md:hidden">
                             <div class="list-icon-show text-2xl flex items-end py-2">
