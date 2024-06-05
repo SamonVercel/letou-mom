@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  transition: 0.4s;
+  position: fixed;
+  top: 0px;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
+
+@media screen and (min-width: 768px) {
+  .top-menu-list {
+    height: auto;
+  }
+  .top-menu-list.top-menu-toggle {
+    height: auto;
+  }
+
+  .bottom-menu.bottom-menu-toggle {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-menu-list.top-menu-toggle {
+    height: 58vh;
+  }
+
+  .bottom-menu.bottom-menu-toggle {
+    height: 60vh;
+  }
+}
